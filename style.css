@@ -607,5 +607,15 @@ i[ title="logo-footer"] {
         padding: 0;
     }
 
+    .content {
+        top: 54%;
+        left: 20%;
+        font-size: 1rem;
+    }
+
+    .content > h2 {
+        width: 200px;
+    }
+
 }
 
