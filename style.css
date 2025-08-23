@@ -344,7 +344,7 @@ main,
 
 .fst-blk .fst-sec-1 p {
     margin-top: 5px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-family: arial;
     font-weight: bolder;
     color: white;
@@ -365,6 +365,12 @@ i[ title="logo-footer"] {
     margin-left: 10px;
 }
 
+
+.snd-blk {
+    padding: 10px;
+    font-size: 1.3rem;
+} 
+
 .secondary-footer {
     width: 100%;
     background-color: blue;
@@ -372,19 +378,30 @@ i[ title="logo-footer"] {
     font-family: arial;
 }
 
+.quickLinkItem {
+    text-decoration: none;
+    color: white;
+    padding-top:30px;
+    padding-left: 20px;
+    text-align: center;
+}
+
 .trd-sec-1 {
     padding: 0 10px;
     color: white;
     font-weight: bold;
     font-family: arial;
+    font-size: 1.3rem;
 }
 
 .trd-sec-2 {
     padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .trd-sec-2 a {
-    display: inline;
+    padding-left: 20px;
     text-decoration: none;
     font-size: 1.2rem;
     color: white;
