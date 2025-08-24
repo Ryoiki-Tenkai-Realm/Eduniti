@@ -117,7 +117,7 @@ main,
 
 .cont-1 {
     width: 100%;
-    height: max(100vh,745px);
+    height: max(100vh,766px);
     overflow-x: hidden;
     perspective: 20px;
     position: fixed;
@@ -241,7 +241,7 @@ main,
 .cont-2 {
     width: 100vw;
     position: absolute;
-    top: max(100vh,761px);
+    top: max(100vh,766px);
     background-color: black;
 }
 
@@ -827,5 +827,49 @@ i[ title="logo-footer"] {
         font-size: 1.6rem;
     }
 
+}
+
+/* animation home page */
+@media (max-width:450px) {
+    @keyframes zoomInOut {
+    0% {
+        transform: scale(1.22);
+    }
+
+    10% {
+        transform: scale(1.2);
+        /* Zoom in slightly */
+    }
+
+    20% {
+        transform: scale(1.18);
+    }
+
+    30% {
+        transform: scale(1.16);
+    }
+
+    40% {
+        transform: scale(1.14);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+    60% {
+        transform: scale(1.09);
+    }
+    70% {
+        transform: scale(1.06);
+    }
+    80% {
+        transform: scale(1.04);
+    }
+    90% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+ }
 }
 
