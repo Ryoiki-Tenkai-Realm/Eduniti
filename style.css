@@ -1,5 +1,6 @@
 :root {
     --justify-content: space-evenly;
+    --background-color: linear-gradient(to top right, rgb(8, 35, 38) 20%, rgb(50, 25, 71));
 }
 
 * {
