@@ -244,6 +244,136 @@ main,
     background-color: black;
 }
 
+.material {
+    width: 100%;
+    height: 100vh;
+}
+
+.srch {
+    width: 100%;
+    background-image: var(--background-color);
+    justify-content: space-between;
+    position: relative;
+}
+
+.srch-img {
+    width: fit-content;
+}
+
+.srch-img>img {
+    width: 38em;
+}
+
+.srch-mss-box {
+    --top-space: 12px;
+    --bottom-space: 38px;
+    width: 22em;
+    height: 12em;
+    position: absolute;
+    padding: 30px;
+    justify-content: center;
+    text-align: right;
+    top: 4em;
+    left: 28em;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(30deg, #fe6225 18.18%, #ff1502 81.97%);
+    clip-path: polygon(0 0, 0 0, calc(var(--top-space)*.25) 0, calc(var(--top-space)*2) calc(var(--top-space)*.66), calc(var(--top-space)*4) 0, 100% 0, 100% calc(100% - var(--bottom-space)*.66), calc(100% - var(--bottom-space)*.75) calc(100% - var(--bottom-space)*.66), calc(100% - var(--bottom-space)*2) calc(100% - var(--bottom-space)*.75), calc(100% - var(--bottom-space)*4) 100%, calc(100% - var(--bottom-space)*3.5) calc(100% - var(--bottom-space)*.66), 0 calc(100% - var(--bottom-space)*.66))
+}
+
+.srch-mss {
+    font-size: 1.4rem;
+}
+
+.srch-sec {
+    width: 50vw;
+    height: 100%;
+    justify-content: center;
+}
+
+
+.search-bar {
+    width: 350px;
+    height: 450px;
+    background-image: linear-gradient(to bottom left, #006aff, #7dbdf1);
+    border-radius: 20px;
+    padding: 30px 40px;
+    position: relative;
+    flex-direction: column;
+}
+
+.srch-logo {
+    width: 110px;
+    height: 110px;
+    background-image: url('image.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.search-bar input[type=search] {
+    width: 30px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('search-icon.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 40px;
+    transition: width 0.4s ease-in-out;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type=search]:focus {
+    background-image: none;
+    width: 100%;
+}
+
+label {
+    padding: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: arial;
+    color: white;
+    position: relative;
+}
+
+.resultbar {
+    width: 100%;
+    max-height: 152px;
+    margin-top: 7.5px;
+    padding: 0px 40px;
+    overflow-y: scroll;
+    text-decoration: none;
+    background-color: transparant;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#results {
+    list-style-type: decimal;
+    font-size: 20px;
+    color: rgb(47, 46, 46);
+    font-weight: bold;
+}
+
+#results li a {
+    text-decoration: none;
+    color: rgb(255, 0, 0, .7);
+    line-height: 30px;
+}
+
+#results li a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
 .disd {
     justify-content: center;
     flex-direction: column;
@@ -623,6 +753,77 @@ i[ title="logo-footer"] {
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
         grid-row-gap: 1rem;
+    }
+
+}
+
+/* search */
+
+@media (max-width:970px) {
+    .srch {
+        flex-direction: column;
+        background-image: linear-gradient(to bottom left, #006aff, #7dbdf1);;
+    }
+
+    .srch-img>img {
+        width: 100vw;
+    }
+
+    
+
+    .srch-sec {
+        width: 100vw;
+    }
+
+    .search-bar {
+        width: 100vw;
+        border-radius: 0px;
+    }
+
+}
+
+@media only screen and (min-width:525px) and (max-width:700px) {
+    .srch-mss-box {
+        top: 5em;
+        left: 65vw;
+        width: 360px;
+        height: 230px;
+        --bottom-space: 30px;
+    }
+}
+
+@media (max-width:525px) {
+    .srch-mss-box {
+        width: 250px;
+        height: 180px;
+        left: 280px;
+        top: 30px;
+        --bottom-space:30px;
+        padding: 20px;
+    }
+
+    .srch-mss {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:413px) {
+    .srch-mss-box {
+        width: 200px;
+        height: 130px;
+        left: 200px;
+    }
+
+    .srch {
+        display:block;
+    }
+
+    .srch-img > img {
+        width: 100%;
+    }
+
+    label {
+        font-size: 1.6rem;
     }
 
 }
