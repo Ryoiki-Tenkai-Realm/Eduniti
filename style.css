@@ -1,6 +1,7 @@
 :root {
     --justify-content: space-evenly;
     --background-color: linear-gradient(to top right, rgb(8, 35, 38) 20%, rgb(50, 25, 71));
+    --gap:1rem;
 }
 
 * {
@@ -58,8 +59,8 @@ main,
     font-size: 1rem;
     font-weight: 900;
     justify-content: center;
-    color: rgba(255, 55, 0, 0.8);
-    border: 3px solid #ff4545;
+    color: #323232;
+    border: 3px solid #454545;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -77,7 +78,7 @@ main,
 
 .primary-navigation li a {
     text-decoration: none;
-    color: #ff4545;
+    color: #454545;
 }
 
 .sr-only {
@@ -98,7 +99,7 @@ main,
 }
 
 .border:hover {
-    text-decoration: underline #ff4545 2px;
+    text-decoration: underline #454545 2px;
 }
 
 .sd {
@@ -107,7 +108,7 @@ main,
 
 #search-icon {
     font-size: 1.6rem;
-    color: #ff4545;
+    color: #454545;
 }
 
 .center {
