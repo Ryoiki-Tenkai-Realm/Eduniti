@@ -246,6 +246,176 @@ main,
     background-color: black;
 }
 
+.material-sec {
+    width: 100%;
+    background-color: rgb(255, 145, 0);
+    padding: 60px 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.material-sec >h3 {
+    color: white;
+    font-size: 5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+    
+.general-sec {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 60px 0;
+    gap: 2rem;
+}
+
+.mat-card {
+    width: 280px;
+    height: 420px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 28px 33px;
+    flex-direction: column;
+    text-align: center;
+    font-family: arial;
+    box-shadow: 10px 10px 0px black;
+} 
+
+.mat-logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mat-par {
+    padding: 5px;
+}
+
+.mat-par > h2 {
+    padding-bottom: 10px;
+}
+
+.mat-card .mat-access {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.mat-card .mat-access a{
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 157, 255);
+    border-radius: 20px;
+}
+
+.lg1 {
+    width: 90px;
+    height: 120px;
+    background-image: url('notes.png');
+}
+
+.lg2 {
+    width: 100px;
+    height: 100px;
+    background-image: url('book.png');
+}
+
+.lg3 {
+    width: 110px;
+    height: 110px;
+    background-image: url('pyq.png');
+}
+
+.lg4 {
+    width: 110px;
+    height: 110px;
+    background-image: url('course.png');
+}
+
+.mat-sec {
+    width: 100%;
+    height: 750px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-color: orangered;
+    display: block;
+}
+
+.mat-sec .mat-ctn {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 30%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autocome 30s linear 2s infinite;
+}
+
+.mat-sec .mat-ctn .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(calc((var(--position) - 1) * (360 / (var(--quantity))) * 1deg))
+                translateZ(540px);
+}
+
+@keyframes autocome {
+    from {
+        transform: perspective(1000px) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.mat-sec .mat-ctn .item .team-card {
+    position: relative;
+    width: 150px;
+    height: 260px;
+    object-fit: cover;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.mat-ctn:has(.item:hover) {
+  animation-play-state: paused;
+}
+
+.mat-sec .mat-ctn .item .team-card h3 {
+    font-size: 1rem;
+}
+
+.mat-sec .mat-ctn .item .team-card h5 {
+    font-size: 0.8rem;
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+
+.mat-sec .mat-ctn .item .team-card p {
+    font-size: 0.6rem;
+}
+
+.mat-sec .mat-ctn .item .team-card:hover {
+    transform: translatez(10px);
+    transform-origin: bottom;
+}
+
+.mat-sec .mat-ctn .item .team-card .mem {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.mat-sec .mat-ctn .item .team-card .mem-smp i {
+    font-size: 1rem;
+}
+
+
 .team-sec {
     width: 100%;
     font-family: arial;
@@ -348,6 +518,7 @@ main,
 .mem-smp > i {
     font-size: 20px;
     color: #f75506;
+    cursor: pointer;
 }
 
 .srch {
@@ -973,5 +1144,16 @@ i[ title="logo-footer"] {
         transform: scale(1);
     }
  }
+}
+
+/* members */
+@media (max-width:850px) {
+    .mat-sec {
+        display: none;
+    }
+
+    .team-sec2 {
+        display: block;
+    }
 }
 
