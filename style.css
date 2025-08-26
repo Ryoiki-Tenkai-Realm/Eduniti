@@ -446,6 +446,7 @@ main,
     background-color: #f75506;
     justify-content: center;
     padding: 80px 30px;
+    display: none;
 }
 
 .team-ctn {
