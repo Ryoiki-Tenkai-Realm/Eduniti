@@ -98,7 +98,7 @@ main,
     border-radius: 10px;
 }
 
-#coderSection {
+#codingSection {
     display:none;
 }
 
@@ -1036,7 +1036,7 @@ i[ title="logo-footer"] {
         margin-top: 6px;
     }
     
-    #coderSection {
+    #codingSection {
         display:block;
     }
 
