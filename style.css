@@ -118,7 +118,7 @@ main,
 
 .cont-1 {
     width: 100%;
-    height: max(100vh,766px);
+    height: max(106vh,760px);
     overflow-x: hidden;
     perspective: 20px;
     position: fixed;
@@ -190,14 +190,6 @@ main,
     }
 }
 
-.parallax img {
-    position: absolute;
-    width: 650px;
-    height: calc(100vh-30px);
-    bottom: -50px;
-    right: -20px;
-}
-
 .ind {
     position: absolute;
     width: 100%;
@@ -246,7 +238,7 @@ main,
     background-color: black;
 }
 
-.material-sec {
+.material-sec1 {
     width: 100%;
     background-color: rgb(255, 145, 0);
     padding: 60px 10px;
@@ -254,7 +246,7 @@ main,
     flex-direction: column;
 }
 
-.material-sec >h3 {
+.material-sec1 >h3 {
     color: white;
     font-size: 5rem;
     text-decoration: underline;
@@ -312,6 +304,10 @@ main,
     border-radius: 20px;
 }
 
+.mat-card .mat-access a:hover {
+    background-color: orangered;
+}
+
 .lg1 {
     width: 90px;
     height: 120px;
@@ -334,6 +330,123 @@ main,
     width: 110px;
     height: 110px;
     background-image: url('course.png');
+}
+
+.material-sec2 {
+    width: 100%;
+    padding: 40px;
+    background-color:#0e121b;
+    font-family: arial;
+    flex-direction: column;
+}
+
+.material-sec2 > h2 {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    justify-content: center;
+}
+
+.coder-sec {
+    max-width:1300px;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.cod-card {
+    width: 280px;
+    height: 350px;
+    border: 2px solid #1c1f2b;
+    border-radius: 10px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.code-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-position: cover;
+    background-size: contain;
+    background-position: center;
+}
+
+.codelogo1 {
+    background-image: url('assets/html.png');
+}
+
+.codelogo2 {
+    background-image: url('assets/css.png');
+}
+
+.codelogo3 {
+    background-image: url('assets/js.png');
+}
+
+.codelogo4 {
+    background-image: url('assets/python.png');
+}
+
+.codelogo5 {
+    background-image: url('assets/c.png');
+}
+
+.codelogo6 {
+    background-image: url('assets/reactjs.png');
+}
+
+.codelogo7 {
+    background-image: url('assets/java.png');
+}
+
+.codelogo8 {
+    background-image: url('assets/c++.png');
+}
+
+.codelogo9 {
+    background-image: url('assets/php.png');
+}
+
+.code-info {
+    padding: 10px;
+}
+
+.code-info > h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.code-info > p {
+    color: gray;
+}
+
+.adjust {
+    height: 115px;
+}
+
+.code-buttons {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 4;
+}
+
+.code-buttons  a {
+    text-align: center;
+    width: 170px;
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.code-buttons > a:hover {
+    background-color: rgb(219, 164, 97);
 }
 
 .mat-sec {
