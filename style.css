@@ -98,12 +98,12 @@ main,
     border-radius: 10px;
 }
 
-.border:hover {
-    text-decoration: underline #454545 2px;
+#coderSection {
+    display:none;
 }
 
-.sd {
-    display: none;
+.border:hover {
+    text-decoration: underline #454545 2px;
 }
 
 #search-icon {
@@ -1035,14 +1035,9 @@ i[ title="logo-footer"] {
         width: 1.2rem;
         margin-top: 6px;
     }
-
-    .search-section,
-    .rmd {
-        display: none;
-    }
-
-    .sd {
-        display: block;
+    
+    #coderSection {
+        display:block;
     }
 
 }
