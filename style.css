@@ -98,7 +98,7 @@ main,
     border-radius: 10px;
 }
 
-#codingSection {
+a[title="coder"] {
     display:none;
 }
 
@@ -1036,8 +1036,12 @@ i[ title="logo-footer"] {
         margin-top: 6px;
     }
     
-    #codingSection {
+    a[title="coder"] {
         display:block;
+    }
+
+    .search-section {
+        display:none;
     }
 
 }
