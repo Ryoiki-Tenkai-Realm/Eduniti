@@ -31,12 +31,12 @@
     <!-- Favicon and Theme Color -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#4a90e2">
-    
+
     <title>Eduniti</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="study.css">
 </head>
 
 <body>
@@ -63,8 +63,8 @@
                     <li class="border menu-item">
                         <a href="#aboutZone">About Us</a>
                     </li>
-                    <li class="border menu-item">
-                        <a href="#codingSection" title="coder">Coder Zone</a>
+                    <li class="border menu-item dis">
+                        <a href="#codingSection">Coder Zone</a>
                     </li>
                     <li class="search-section border menu-item">
                         <a href="#searchZone"><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></a>
@@ -94,12 +94,12 @@
             </div>
             <div class="ar"></div>
         </div>
-        <div class="cont-2">
-            <div class="material-sec1 center" id="MaterialZone">
-                <h3>General Zone</h3>
+        <div class="cont-2" id="MaterialZone">
+            <div class="material-sec1 center">
+                <h3 class="visible">General Zone</h3>
                 <div class="material-ctn">
                     <div class="general-sec center">
-                        <div class="mat-card center">
+                        <div class="mat-card center visible">
                             <div class="mat-logo lg1"></div>
                             <div class="mat-par">
                                 <h2>Notes</h2>
@@ -111,7 +111,7 @@
                                 <a href="www.google.com" class="mat-button"> Want Notes</a>
                             </div>
                         </div>
-                        <div class="mat-card center">
+                        <div class="mat-card center visible">
                             <div class="mat-logo lg2"></div>
                             <div class="mat-par">
                                 <h2>Books</h2>
@@ -123,7 +123,7 @@
                                 <a href="www.google.com" class="mat-button">Want Pdf</a>
                             </div>
                         </div>
-                        <div class="mat-card center">
+                        <div class="mat-card center visible">
                             <div class="mat-logo lg3"></div>
                             <div class="mat-par">
                                 <h2>Pyqs</h2>
@@ -135,7 +135,7 @@
                                 <a href="www.google.com" class="mat-button">Want Pyqs</a>
                             </div>
                         </div>
-                        <div class="mat-card center">
+                        <div class="mat-card center visible">
                             <div class="mat-logo lg4"></div>
                             <div class="mat-par">
                                 <h2>Tutorials</h2>
@@ -151,20 +151,20 @@
                 </div>
             </div>
             <div class="material-sec2 center" id="codingSection">
-                <h2>Coder Section</h2>
+                <h2 class="visible">Coder Section</h2>
                 <div class="coder-sec center">
-                    <div class="cod-card">
+                    <div class="cod-card visible">
                         <div class="code-logo codelogo1"></div>
                         <div class="code-info">
                             <h2>HTML Tutorial</h2>
                             <p>The word hypertext markup language is composed of the words “hypertext” and “mar...</p>
                         </div>
                         <div class="code-buttons">
-                           <a href="#">Start Learning</a>
+                            <a href="#">Start Learning</a>
                             <a href="#">Want Notes</a>
                         </div>
                     </div>
-                    <div class="cod-card">
+                    <div class="cod-card visible">
                         <div class="code-logo codelogo2"></div>
                         <div class="code-info">
                             <h2>CSS Tutorial</h2>
@@ -175,7 +175,7 @@
                             <a href="#">Want Notes</a>
                         </div>
                     </div>
-                    <div class="cod-card">
+                    <div class="cod-card visible">
                         <div class="code-logo codelogo3"></div>
                         <div class="code-info adjust">
                             <h2>JavaScript Tutorial</h2>
@@ -186,7 +186,7 @@
                             <a href="#">Want Notes</a>
                         </div>
                     </div>
-                    <div class="cod-card">
+                    <div class="cod-card visible">
                         <div class="code-logo codelogo4"></div>
                         <div class="code-info">
                             <h2>Python Tutorial</h2>
@@ -197,7 +197,7 @@
                             <a href="#">Want Notes</a>
                         </div>
                     </div>
-                    <div class="cod-card">
+                    <div class="cod-card visible">
                         <div class="code-logo codelogo5"></div>
                         <div class="code-info">
                             <h2>C Tutorial</h2>
@@ -208,7 +208,7 @@
                             <a href="#">Want Notes</a>
                         </div>
                     </div>
-                    <div class="cod-card">
+                    <div class="cod-card visible">
                         <div class="code-logo codelogo6"></div>
                         <div class="code-info">
                             <h2>React JS Tutorial</h2>
@@ -219,7 +219,7 @@
                             <a href="#">Want Notes</a>
                         </div>
                     </div>
-                    <div class="cod-card">
+                    <div class="cod-card visible">
                         <div class="code-logo codelogo7"></div>
                         <div class="code-info">
                             <h2>Java Tutorial</h2>
@@ -230,7 +230,7 @@
                             <a href="#">Want Notes</a>
                         </div>
                     </div>
-                    <div class="cod-card">
+                    <div class="cod-card visible">
                         <div class="code-logo codelogo8"></div>
                         <div class="code-info">
                             <h2>C++ Tutorial</h2>
@@ -241,7 +241,7 @@
                             <a href="#">Want Notes</a>
                         </div>
                     </div>
-                    <div class="cod-card">
+                    <div class="cod-card visible">
                         <div class="code-logo codelogo9"></div>
                         <div class="code-info">
                             <h2>PHP Tutorial</h2>
@@ -254,8 +254,8 @@
                     </div>
                 </div>
             </div>
-            <div class="team-sec" id="aboutZone">
-                <div class="team-sec1">
+            <div class="team-sec">
+                <div class="team-sec1" id="aboutZone">
                     <div class="team">
                         <p>OUR TEAM MEMBERS</p>
                     </div>
@@ -271,10 +271,7 @@
                                 <div class="mem-about">
                                     <h3>Kishan Kumar</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -292,10 +289,7 @@
                                 <div class="mem-about">
                                     <h3>Sahil Sharma</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -313,10 +307,7 @@
                                 <div class="mem-about">
                                     <h3>Kartikey Kumar</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -334,10 +325,7 @@
                                 <div class="mem-about">
                                     <h3>Earthdeep</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -355,10 +343,7 @@
                                 <div class="mem-about">
                                     <h3>Kishan Kumar</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -376,10 +361,7 @@
                                 <div class="mem-about">
                                     <h3>Sahil Sharma</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -397,10 +379,7 @@
                                 <div class="mem-about">
                                     <h3>Kartikey Kumar</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -418,10 +397,7 @@
                                 <div class="mem-about">
                                     <h3>Earthdeep</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                     <footer class="mem-smp center">
                                         <i class="fa-brands fa-discord"></i>
                                         <i class="fa-brands fa-linkedin"></i>
@@ -439,10 +415,7 @@
                                 <div class="mem-about">
                                     <h3>Kishan Kumar</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -460,10 +433,7 @@
                                 <div class="mem-about">
                                     <h3>Sahil Sharma</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -481,10 +451,7 @@
                                 <div class="mem-about">
                                     <h3>Kartikey Kumar</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -502,10 +469,7 @@
                                 <div class="mem-about">
                                     <h3>Earthdeep</h3>
                                     <h5>Developer</h5>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia
-                                        corporis
-                                        architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                        accusantium aliquam.</p>
+                                    <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                                 </div>
                                 <footer class="mem-smp center">
                                     <i class="fa-brands fa-discord"></i>
@@ -519,16 +483,14 @@
                 </div>
                 <div class="team-sec2 center">
                     <div class="team-ctn center">
-                        <div class="team-card center">
+                        <div class="team-card center visible">
                             <header class="mem-logo-box">
                                 <div class="mem logo1"></div>
                             </header>
                             <div class="mem-about">
                                 <h3>Kishan Kumar</h3>
                                 <h5>Developer</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia corporis
-                                    architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                    accusantium aliquam.</p>
+                                <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                             </div>
                             <footer class="mem-smp center">
                                 <i class="fa-brands fa-discord"></i>
@@ -544,9 +506,7 @@
                             <div class="mem-about">
                                 <h3>Sahil Sharma</h3>
                                 <h5>Developer</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia corporis
-                                    architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                    accusantium aliquam.</p>
+                                <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                             </div>
                             <footer class="mem-smp center">
                                 <i class="fa-brands fa-discord"></i>
@@ -562,9 +522,7 @@
                             <div class="mem-about">
                                 <h3>Kartikey Kumar</h3>
                                 <h5>Developer</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia corporis
-                                    architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                    accusantium aliquam.</p>
+                                <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                             </div>
                             <footer class="mem-smp center">
                                 <i class="fa-brands fa-discord"></i>
@@ -580,9 +538,7 @@
                             <div class="mem-about">
                                 <h3>Earthdeep</h3>
                                 <h5>Developer</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officia corporis
-                                    architecto labore quisquam delectus illum et molestias quis, in vel? Eius dolore
-                                    accusantium aliquam.</p>
+                                <p>A Computer science and engginering Diploma student from batch 2024-2027 and a new learner in web development just trying to explore the whole Coding world and having a limitless hunger of knowledge.</p>
                             </div>
                             <footer class="mem-smp center">
                                 <i class="fa-brands fa-discord"></i>
@@ -596,7 +552,7 @@
                 </div>
             </div>
             <div class="srch center" id="searchZone">
-                <div class="srch-img">
+                <div class="srch-img slide-animation">
                     <img src="avatar2.png" alt="image">
                     <div class="srch-mss-box center">
                         <div class="srch-mss">
@@ -605,11 +561,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="srch-sec center">
+                <div class="srch-sec center visible">
                     <section class="search-bar center" id="searchBar">
                         <div class="srch-logo"></div>
                         <label for="searchInput">Search Here!</label>
-                        <input id="searchInput" type="search" placeholder="Search here...">
+                        <input id="searchInput" type="text" placeholder="Search here...">
                         <div class="resultbar">
                             <ul id="results">
                             </ul>
@@ -618,27 +574,27 @@
                 </div>
             </div>
             <div class="disd center">
-                <div class="disd-head">
+                <div class="disd-head visible">
                     <h2>Why to choose us?</h2>
                 </div>
-                <div class="disd-ctn center">
+                <div class="disd-ctn center visible">
                     <div class="disd-box">
                         <h3>Notes</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, placeat facilis vero
-                            accusamus repellat odio cumque reiciendis nisi eligendi sit corporis ducimus mollitia
-                            veritatis eveniet dolor minus, architecto aut reprehenderit.</p>
+                        <p>We offers high-quality, reliable notes to help you score well in semester exams and
+                            build a strong academic future. We’re dedicated to supporting your success with the
+                            best study materials available.</p>
                     </div>
                     <div class="disd-box">
                         <h3>Books</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, placeat facilis vero
-                            accusamus repellat odio cumque reiciendis nisi eligendi sit corporis ducimus mollitia
-                            veritatis eveniet dolor minus, architecto aut reprehenderit.</p>
+                        <p>We believe books fuel knowledge. Explore our curated PDF collection to clear
+                            doubts beyond notes and discover new insights. We’re here to support every curious learner
+                            in their academic journey.</p>
                     </div>
                     <div class="disd-box" title="third">
                         <h3>PYQs</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, placeat facilis vero
-                            accusamus repellat odio cumque reiciendis nisi eligendi sit corporis ducimus mollitia
-                            veritatis eveniet dolor minus, architecto aut reprehenderit.</p>
+                        <p>We provide the latest previous year question papers (PYQs) to help you
+                            understand exam patterns and boost your scores. Practicing PYQs gives you a real
+                            sense of the questions you may face.</p>
                     </div>
                 </div>
             </div>
@@ -651,22 +607,22 @@
                                 <p>Follow us:-</p>
                             </div>
                             <div class="fst-sec-2">
-                                <a href="#">
+                                <a href="https://github.com/Ryoiki-Tenkai-Realm">
                                     <i class="fa-brands fa-discord" title="logo-footer"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://github.com/Ryoiki-Tenkai-Realm">
                                     <i class="fa-brands fa-reddit-alien" title="logo-footer"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://github.com/Ryoiki-Tenkai-Realm">
                                     <i class="fa-brands fa-x-twitter" title="logo-footer"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://github.com/Ryoiki-Tenkai-Realm">
                                     <i class="fa-brands fa-instagram" title="logo-footer"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://github.com/Ryoiki-Tenkai-Realm">
                                     <i class="fa-brands fa-youtube" title="logo-footer"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://github.com/Ryoiki-Tenkai-Realm">
                                     <i class="fa-brands fa-linkedin" title="logo-footer"></i>
                                 </a>
                             </div>
@@ -690,12 +646,24 @@
                         <p>© 2025 Cisco. All rights reserved.</p>
                     </div>
                     <div class="trd-sec-2">
-                        <a href="#"><p>Terms and Conditions</p></a>
-                        <a href="#"><p>Privacy Statements</p></a>
-                        <a href="#"><p>Cookie Policy</p></a>
-                        <a href="#"><p>Data Protection</p></a>
-                        <a href="#"><p>Trademarks</p></a>
-                        <a href="#"><p>Accessibility</p></a>
+                        <a href="#">
+                            <p>Terms and Conditions</p>
+                        </a>
+                        <a href="#">
+                            <p>Privacy Statements</p>
+                        </a>
+                        <a href="#">
+                            <p>Cookie Policy</p>
+                        </a>
+                        <a href="#">
+                            <p>Data Protection</p>
+                        </a>
+                        <a href="#">
+                            <p>Trademarks</p>
+                        </a>
+                        <a href="#">
+                            <p>Accessibility</p>
+                        </a>
                     </div>
                 </div>
             </footer>
