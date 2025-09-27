@@ -716,7 +716,7 @@ main,
 .srch-logo {
     width: 100px;
     height: 100px;
-    background-image: url('search-logo.png');
+    background-image: url('search-icon.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
