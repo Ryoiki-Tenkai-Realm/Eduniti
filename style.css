@@ -1,6 +1,6 @@
 :root {
-    --justify-content: space-evenly;
     --background-color: linear-gradient(to top right, rgb(8, 35, 38) 20%, rgb(50, 25, 71));
+    --justify-content: space-evenly;
     --gap:1rem;
 }
 
@@ -15,7 +15,6 @@ html,
 .bg {
     width: 100%;
     height: 100%;
-    
 }
 
 main,
@@ -29,7 +28,7 @@ main,
     width: 100%;
     padding: 15px 20px;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.082);
+    background-color: #00000015;
     position: fixed;
     z-index: 9999;
     overflow: hidden;
@@ -59,7 +58,7 @@ main,
     font-size: 1rem;
     font-weight: 900;
     justify-content: center;
-    color: #323232;
+    color: #454545;
     border: 3px solid #454545;
     border-radius: 20px;
     cursor: pointer;
@@ -79,6 +78,7 @@ main,
 .primary-navigation li a {
     text-decoration: none;
     color: #454545;
+    font-weight: bold;
 }
 
 .sr-only {
@@ -92,13 +92,12 @@ main,
     border: 0;
 }
 
-
 .menu-item {
     padding: 5px 10px;
     border-radius: 10px;
 }
 
-a[title="coder"] {
+.dis {
     display:none;
 }
 
@@ -118,8 +117,8 @@ a[title="coder"] {
 
 .cont-1 {
     width: 100%;
-    height: max(106vh,760px);
-    overflow-x: hidden;
+    height: max(105vh, 750px);
+    overflow-x: 1;
     perspective: 20px;
     position: fixed;
 }
@@ -133,7 +132,7 @@ a[title="coder"] {
 
 .bg {
     position: absolute;
-    background-image: url("anime style backgrou2.png");
+    background-image: url("anime\ style\ backgrou2.png");
     background-size: cover;
     background-position: center;
     transform: translateZ(-30px);
@@ -146,15 +145,20 @@ a[title="coder"] {
     0% {
         transform: scale(1.2);
     }
+
     25% {
-        transform: scale(1.15); /* Zoom in slightly */
+        transform: scale(1.15);
+        /* Zoom in slightly */
     }
+
     50% {
         transform: scale(1.1);
     }
+
     75% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
@@ -165,27 +169,28 @@ a[title="coder"] {
     top: 50%;
     left: 25%;
     transform: translate(-50% -50%);
-    padding-right: 20px;
-    width: 249px;
+    width: 200px;
     height: 34px;
     color: #fff;
     overflow: hidden;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-wrap: wrap;
     transform: translateZ(10px);
     text-shadow: 0 0 20px black;
-    animation: textvisible 10s 2s forwards;
+    animation: textvisible 8s 2s forwards;
 }
 
-.content  h2,
-.content  h3 {
+.content h2,
+.content h3 {
     text-align: center;
 }
 
 @keyframes textvisible {
     from {
         height: 34px;
-    }to {
+    }
+
+    to {
         height: 130px;
     }
 }
@@ -202,7 +207,7 @@ a[title="coder"] {
     margin-left: 30px;
 }
 
-.ind-box > h3{
+.ind-box>h3 {
     display: inline-block;
     padding: 10px 20px;
     border: 3px solid;
@@ -227,14 +232,16 @@ a[title="coder"] {
 .ar {
     width: 100%;
     height: 50px;
-    background-color: #2c2883;
+    background-color: #000b2c;
+    border-top:3px solid #000b2c;
 }
 
+/* second-zone */
 
 .cont-2 {
-    width: 100%;
+    width: 100vw;
     position: absolute;
-    top: max(100vh,766px);
+    top: max(100vh, 766px);
     background-color: black;
 }
 
@@ -264,7 +271,7 @@ a[title="coder"] {
 .mat-card {
     width: 280px;
     height: 420px;
-    background-color: white;
+    background-color: rgb(35, 35, 43);
     border-radius: 15px;
     padding: 28px 33px;
     flex-direction: column;
@@ -276,7 +283,7 @@ a[title="coder"] {
 .mat-logo {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .mat-par {
@@ -285,6 +292,11 @@ a[title="coder"] {
 
 .mat-par > h2 {
     padding-bottom: 10px;
+    color: orangered;
+}
+
+.mat-par > p {
+    color: rgb(84, 84, 84);
 }
 
 .mat-card .mat-access {
@@ -466,7 +478,7 @@ a[title="coder"] {
     top: 30%;
     left: calc(50% - 100px);
     transform-style: preserve-3d;
-    transform: perspective(1000px);
+    transform: perspective(1010px);
     animation: autocome 30s linear 2s infinite;
 }
 
@@ -479,9 +491,9 @@ a[title="coder"] {
 
 @keyframes autocome {
     from {
-        transform: perspective(1000px) rotateY(0deg);
+        transform: perspective(1010px) rotateY(0deg);
     }to{
-        transform: perspective(1000px) rotateY(360deg);
+        transform: perspective(1010px) rotateY(360deg);
     }
 }
 
@@ -528,7 +540,6 @@ a[title="coder"] {
     font-size: 1rem;
 }
 
-
 .team-sec {
     width: 100%;
     font-family: arial;
@@ -565,16 +576,16 @@ a[title="coder"] {
 .team-ctn {
     justify-content: space-evenly;
     gap: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
 }
 
 .team-card {
     width: 300px;
-    height: 445px;
-    background-color: #f9f7f7;
-    border-radius: 10px;
+    height: 440px;
     padding: 30px;
     text-align: center;
+    background-color: #f9f7f7;
+    border-radius: 10px;
     justify-content: center;
     flex-direction: column;
 }
@@ -621,7 +632,6 @@ a[title="coder"] {
     padding-bottom: 20px;
     font-weight: 300;
     color: #454545;
-    font-size: calibri;
 }
 
 .mem-smp {
@@ -647,7 +657,23 @@ a[title="coder"] {
 }
 
 .srch-img>img {
-    width: 38em;
+    width: 40em;
+}
+
+.slide-animation {
+    animation: slide-animation both;
+    animation-timeline: view(50% 20%);
+}
+
+@keyframes slide-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .srch-mss-box {
@@ -676,9 +702,9 @@ a[title="coder"] {
     justify-content: center;
 }
 
-
 .search-bar {
-    width: 350px;
+    width: calc(100% - 50px);
+    max-width: 500px;
     height: 450px;
     background-image: linear-gradient(to bottom left, #006aff, #7dbdf1);
     border-radius: 20px;
@@ -688,17 +714,16 @@ a[title="coder"] {
 }
 
 .srch-logo {
-    width: calc(100% - 50px);
-    max-width: 500px;
-    height: 110px;
-    background-image: url('image.png');
+    width: 100px;
+    height: 100px;
+    background-image: url('search-logo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
 }
 
-.search-bar input[type=search] {
+.search-bar input[type=text] {
     width: 30px;
     border: 2px solid #ccc;
     border-radius: 7px;
@@ -708,8 +733,8 @@ a[title="coder"] {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 10px 20px 10px 40px;
-    transition: width 0.4s ease-in-out;
+    padding: 10px 30px;
+    transition: width 0.8s ease-in-out;
     font-family: calibri;
     font-weight: bold;
     font-size: 1.4rem;
@@ -717,7 +742,7 @@ a[title="coder"] {
     cursor: pointer;
 }
 
-input[type=search]:focus {
+input[type=text]:focus {
     background-image: none;
     width: 100%;
 }
@@ -761,6 +786,7 @@ label {
     text-decoration: underline;
 }
 
+
 .disd {
     justify-content: center;
     flex-direction: column;
@@ -785,8 +811,8 @@ label {
 }
 
 .disd-box {
-    width: 330px;
-    height: 330px;
+    width: 310px;
+    height: 310px;
     margin-bottom: 20px;
     background-color: #1c1f2b;
     border-radius: 10px;
@@ -818,8 +844,8 @@ label {
 .disd-box::after,
 .disd-ctn::before {
     content: '';
-    width: 330px;
-    height: 330px;
+    width: 320px;
+    height: 320px;
     background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
     position: absolute;
     padding: 4px;
@@ -856,7 +882,8 @@ label {
 .fst-blk {
     border-top: 2px solid rgb(65, 65, 65);
     border-bottom: 2px solid rgb(66, 66, 66);
-    padding:5px 0;
+    padding: 5px 0;
+    padding-bottom: 10px;
 }
 
 .fst-blk .fst-sec-1 p {
@@ -867,8 +894,8 @@ label {
     color: white;
 }
 
-.fst-blk .fst-sec-2  {
-   text-align: center;
+.fst-blk .fst-sec-2 {
+    text-align: center;
 }
 
 .fst-blk .fst-sec-2 a {
@@ -876,12 +903,11 @@ label {
 }
 
 i[ title="logo-footer"] {
-    margin:5px 0px;
+    margin: 5px 0px;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-left: 10px;
 }
-
 
 .snd-blk {
     padding: 10px;
@@ -889,7 +915,7 @@ i[ title="logo-footer"] {
     font-size: 1.1rem;
     display: flex;
     gap: 1rem;
-} 
+}
 
 .secondary-footer {
     width: 100%;
@@ -906,7 +932,7 @@ i[ title="logo-footer"] {
 
 .trd-sec-1 {
     padding: 0 10px;
-    color: white;
+    color: orangered;
     font-weight: bold;
     font-family: arial;
     font-size: 1.3rem;
@@ -919,12 +945,29 @@ i[ title="logo-footer"] {
 }
 
 .trd-sec-2 a {
-    padding-left: 20px;
     text-decoration: none;
     font-size: 1rem;
     color: white;
+    padding-left: 20px;
 }
 
+.visible {
+    animation: visible both;
+    animation-timeline: view(40% 20%);
+}
+
+@keyframes visible {
+    0%{
+        opacity: 0;
+        scale: 0.5;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0);
+    }
+}
 
 /* for why to choose us */
 @media only screen and (min-width:850px) and (max-width:1170px) {
@@ -963,10 +1006,24 @@ i[ title="logo-footer"] {
     .disd-box>p {
         font-size: 1.1rem;
     }
+
+    .srch-img {
+        width: 300px;
+        position: relative;
+        left: 0;
+    }
+
+    .srch-mss-box {
+        width: 270px;
+        top: 10px;
+        right: 0;
+    }
+
+
 }
 
 /* navigation-bar */
-@media (max-width: 38em) {
+@media (max-width: 45em) {
     .aboutus {
         display: inline;
     }
@@ -1035,13 +1092,13 @@ i[ title="logo-footer"] {
         width: 1.2rem;
         margin-top: 6px;
     }
-    
-    a[title="coder"] {
-        display:block;
+
+    .search-section{
+        display: none;
     }
 
-    .search-section {
-        display:none;
+    .dis {
+        display: block;
     }
 
 }
@@ -1076,9 +1133,11 @@ i[ title="logo-footer"] {
     .fst-blk .fst-sec-1 p {
         font-size: 0.8rem;
     }
+
     i[ title="logo-footer"] {
         font-size: 1.2rem;
     }
+
     .snd-blk {
         margin-top: 10px;
         padding-left: 5px;
@@ -1094,6 +1153,7 @@ i[ title="logo-footer"] {
         text-decoration: none;
         font-size: 1rem;
     }
+
     .secondary-footer {
         padding-top: 20px;
     }
@@ -1107,8 +1167,8 @@ i[ title="logo-footer"] {
         margin-top: 5px;
     }
 
-    .trd-sec-2 a p{
-        padding:5px 0;
+    .trd-sec-2 a p {
+        padding: 5px 0;
         font-size: 1rem;
     }
 
@@ -1126,7 +1186,7 @@ i[ title="logo-footer"] {
         font-size: 1rem;
     }
 
-    .content > h2 {
+    .content>h2 {
         width: 200px;
     }
 
@@ -1148,23 +1208,22 @@ i[ title="logo-footer"] {
 @media (max-width:970px) {
     .srch {
         flex-direction: column;
-        background-image: linear-gradient(to bottom left, #006aff, #7dbdf1);;
+        background-image: linear-gradient(to bottom left, #006aff, #7dbdf1);
     }
 
     .srch-img>img {
         width: 100vw;
     }
 
-    
 
     .srch-sec {
         width: 100vw;
     }
-
     .search-bar {
-        max-width: 100%;
+        max-width: 100%;/*now ubdated*/
         width: 100vw;
         border-radius: 0px;
+        background-image:none;
     }
 
 }
@@ -1191,6 +1250,10 @@ i[ title="logo-footer"] {
 
     .srch-mss {
         font-size: 1rem;
+    }
+
+    .parallax img {
+        display: block;
     }
 }
 
@@ -1259,6 +1322,49 @@ i[ title="logo-footer"] {
  }
 }
 
+@media (max-width:360px) {
+    @keyframes zoomInOut {
+    0% {
+        transform: scale(1.28);
+    }
+
+    10% {
+        transform: scale(1.25);
+        /* Zoom in slightly */
+    }
+
+    20% {
+        transform: scale(1.22);
+    }
+
+    30% {
+        transform: scale(1.19);
+    }
+
+    40% {
+        transform: scale(1.16);
+    }
+    50% {
+        transform: scale(1.13);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    70% {
+        transform: scale(1.07);
+    }
+    80% {
+        transform: scale(1.04);
+    }
+    90% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+ }
+}
+
 /* members */
 @media (max-width:850px) {
     .mat-sec {
@@ -1269,4 +1375,3 @@ i[ title="logo-footer"] {
         display: block;
     }
 }
-
